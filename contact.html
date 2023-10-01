@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="logoshkolla.jpg">
+    <script src="https://kit.fontawesome.com/b71442b7a2.js" crossorigin="anonymous"></script>
+    <title>Kontaktoni</title>
+</head>
+<body>
+
+
+    <!--Pjesa e head-erit-->
+    <header class="content col-12 cols-12">
+
+        <!--pjesa e header-it-->
+        <div id="logo-name" class="col-6">
+            <div id="logo">
+                <img src="logoshkolla.jpg" alt="logo" max-width="100px" height="50px" id="img1">
+            </div>
+            <div id="name-sch">
+                Selajdin Mulla Abazi - <span id="nick-name">mici</span>
+            </div>   
+        </div>
+
+
+
+        <!--pjesa e listave-->
+        <ul id="ul">
+            <li class="li li1"><a href="faqja.html" class="a" data-target="contact">Ballina</a></li>
+            <li class="li li2"><a href="rrethnesh.html" class="a" data-target="contact">Rreth Nesh</a></li>
+            <li class="li li3"><a href="lendet.html" class="a" data-target="contact">Lendet</a></li>
+            <li class="li li5"><a href="#" id="active" class="a" data-target="contact">Kontakti</a></li>
+        </ul>
+
+
+        <!--pjesa e hamburger menus-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="faqja.html">Ballina</a>
+              <a href="rrethnesh.html">Rreth Nesh</a>
+              <a href="lendet.html">Lendet</a>
+              <a href="contact.html" id="active-li">Kontakti</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <!--pjesa e section-listes about us-->
+    <section id="header-section" class="col-12 cols-12">
+
+        <div id="opacity" class="col-12">
+            <h1 id="about-us">Kontakti</h1>
+        </div>
+
+    </section>
+
+
+    <!--Pjesa e mapit (hartes) dhe kontaktit-->
+    <div id="boxx" class="col-12 cols-12 content">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.593303407648!2d20.64718367585185!3d42.39380957118977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353a3a5aca1c465%3A0xc198b1b3272038b3!2sSelajdin%20Mullabazi%20MICI!5e0!3m2!1sen!2sus!4v1682896790343!5m2!1sen!2sus" id="img-l" class="col-12 cols-12" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+    <div id="register" class="content col-12">
+        
+        <div class="col-padd col-12">
+            <div class="box-h col-12">
+                <h1 id="h-reg">Regjistrohu</h1>
+                <p id="paragraf-20">Te dhenat te cilat futen duhen te jene prej <b>01.08.viti</b> deri <b>29.08.viti</b>.</p>
+            </div>
+    
+            <div id="r-form" class="col-12 cols-12">
+                <form action="mailto:ramadanzyberaj9
+                @gmail.com"  id="form" method="post" enctype="text/plain">
+                    <!--emri-->
+                    <div class="box-input">
+                        <label for="emri" class="fl col-3 cols-3">Emri:</label>
+                        <input type="text" name="emri" class="inputs fl col-9 cols-12" required>
+                    </div>
+
+
+                    <!--mbiemri-->
+                    <div class="box-input">
+                        <label for="mbiemri" class="fl col-3 cols-3">Mbiemri:</label>
+                        <input type="text" name="mbiemri" class="inputs fl col-9 cols-12" required>
+                    </div>
+
+
+                    <!--e-mail-->
+                    <div class="box-input">
+                        <label for="e-mail" class="fl col-3 cols-3">E-mail:</label>
+                        <input type="text" name="e-mail" class="inputs fl col-9 cols-12" required>
+                    </div>
+
+
+                    <!--Drejtimet-->
+                    <div class="box-input">
+                        <label for="Drejtimi" class="fl col-3 cols-3">Drejtimi:</label>
+                        <select id="directions5" name="drejtimi" class="fl col-9 cols-12">
+                            <option value="Informatike">Informatike</option>
+                            <option value="Mjeksi" selected>Mjeksi</option>
+                            <option value="Juridik">Juridik</option>
+                            <option value="Ekonomi">Ekonomi</option>
+                            <option value="Tek. Ushqimore">Tek.ushqimore</option>
+                            <option value="Ndertimtari">Ndertimtari</option>
+                        </select>
+                    </div>
+
+
+                    
+                    <!--Suksesi-->
+                    <div class="box-input">
+                        <label for="Suksesi" class="fl col-3 cols-3">Suksesi:</label>
+                        <select id="directions5" name="drejtimi" class="fl col-9 cols-12">
+                            <option value="5">5</option>
+                            <option value="4" selected>4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+
+
+
+                    <!--Mesazhi-->
+                    <div class="box-input">
+                        <label for="mesazhi" class="fl col-3 cols-3">Mesazhi:</label>
+                        <textarea name="mesazhi" id="textarea" class="fl col-9 cols-12" rows="5" placeholder="opsional"></textarea>
+                    </div>
+
+                    <!--submit-->
+                    <div class="box-input">
+                        <input type="submit" value="Dergo" class="col-9 cols-12" id="button1">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--Pjesa e fundit e footer-->
+
+
+    <!--Pjesa e fundit e footer-->
+
+    <footer id="footer" class="col-12 content">
+        <h5 id="header51">Created by:</h5>
+
+        <div id="flex-f">
+
+            <div class="cl cl1">
+                <h6 class="header6">ramadanzyberaj9@gmail.com</h6>
+            </div>
+
+
+            <div class="cl cl2">
+                <h6 class="header6">Ramadan Zyberaj</h6>
+            </div>
+
+
+            <div class="cl cl3">
+                
+                <!--Ky divi lart duhet qendroje display block per dy divat e ardhshem per facebook dhe instagram
+                lete fiilojme me divin  e pare-->
+
+
+                <!--Divi i pare  i cili do te  jete flex ne menyre-->
+                <div class="div-s div1">
+                    <div class="div1 inl-div"><i class="fa-brands fa-facebook fa-fade fl" style="color: #206ef3;"></i><h6 class="header6 fl margin-f">ramadan zyberaj</h6></div>
+                </div>
+
+                <!--Divi i dyte i cili do te jete flex ne menyre-->
+                <div class="div-s div2">
+                    <div class="div1=2 inl-div"><i class="fa-brands fa-instagram fa-fade fl" style="color: #f00f92;"></i><h6 class="header6 fl margin-f">ramadan__zyberaj_</h6></div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="type.js"></script>
+    
+</body>
+</html>

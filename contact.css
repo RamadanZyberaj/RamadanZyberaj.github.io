@@ -1,0 +1,2053 @@
+@media only screen and (max-width: 600px) {
+    /*pjesa per telefon ner 600px */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    /*  background-color: red; */
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 30px;
+    }
+    
+    
+    /*pjesa e headr-it*/
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 3vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 3.2vw;
+    }
+    
+    header #ul {
+        display: none;
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.25vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    /*pjesa hamburger - menu */
+    
+    header .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgb(0,0,0);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      header   .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      header .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      header .overlay a:hover, .overlay a:focus, #active-li {
+        color: #f1f1f1;
+      }
+      
+      header .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+
+
+
+      
+
+
+      /*pjesa e section te about us */
+
+      #header-section {
+          position: relative;
+          top: 100px;
+          height: 300px;
+          background-image: url(foto2studenteve.jpg);
+          background-repeat: no-repeat;
+          background-position: 100% 30%;
+          background-size: cover;
+      }
+      
+      
+      #header-section #opacity {
+          height: 100%;
+          background-color: rgba(84, 79, 78, 0.65);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      } 
+      
+      
+      #header-section #opacity #about-us {
+          font-size: 6vw;
+          color: white;
+          font-family:sans-serif;
+          font-weight: bolder;
+          word-spacing: 3px;
+          text-transform:capitalize;
+          animation: anime 2s linear  infinite;
+      }
+      
+      @keyframes anime {
+          0% {
+              color: white;
+          }
+      
+          50% {
+              color: rgb(204, 197, 197);
+          }
+      
+          100% {
+              color: rgb(248, 248, 248);
+          }
+      }
+
+
+
+
+
+    /*pjesa e mapi*/
+     #boxx {
+        position: relative;
+        top: 100px;
+        margin-top: 100px;
+        height: auto;
+    }
+    
+    #boxx #img-l {
+        height: 300px;
+    }
+    
+
+
+
+
+
+
+    /*pjesa e regjistrimit */
+    #register {
+        position: relative;
+        top: 100px;
+        margin-top: 100px;
+        display: block;
+    }
+    
+    #register .col-padd {
+        background-color: rgba(207, 203, 203, 0.2);
+        padding: 20px 20px 50px;
+    }
+    
+    label {
+        font-size: 4vw;
+        letter-spacing: 0.8px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: block;
+    }
+    
+    input, select, textarea {
+        border: 1px solid rgb(171, 170, 170);
+        font-size: 3.3vw;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+    
+    
+    
+    #button1 {
+        padding: 5px 10px;
+        font-size: 3vw;
+        border: 1px solid rgb(171, 170, 170);
+        transition: border .5s ease;
+        cursor: pointer;
+        transition: background-color .5s ease, color .3s ease-out;
+    }
+    
+    
+    #button1:hover {
+        background-color: rgb(19, 166, 215);
+        border: 1px solid rgba(207, 203, 203, 0.2);
+        color: white;
+    }
+    
+    
+    
+    
+    #register .col-padd .box-h {
+        display: block;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    
+    #register .col-padd .box-h #h-reg {
+        font-size: 5.5vw;
+        font-weight: bold;
+        color: rgb(112, 109, 109);
+    } 
+    
+    #register .col-padd .box-h #paragraf-20 {
+        font-weight: lighter;
+        font-size: 3vw;
+        color: rgba(104, 101, 101, 0.9);
+        position: relative;
+        top: 0;
+    }
+    
+    
+    
+    /*pjesa e regjistrumit */
+    #register .col-padd .box-h #r-form {
+        display: block;
+    }
+    
+    #form {
+        margin-top: 100px;
+    }
+    
+    .box-input {
+        margin-top: 20px;
+    }
+    
+    
+    #textarea {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        resize: none;
+    }
+    
+    
+
+
+
+
+
+    /*pjesa e footer */
+
+#footer {
+    position: relative;
+    margin-top: 200px;
+    top: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+}
+
+#footer #header51 {
+    font-size: 3.15vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+}
+
+#footer #flex-f {
+    display: block;
+    text-align: center;
+}
+
+#footer .cl2 {
+    margin-right: 0;
+}
+
+#footer .cl {
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+#footer #flex-f .cl3 .div-s {
+    display: block;
+}
+
+#footer .fl {
+    display: inline;
+}
+
+#footer .header6 {
+    margin-top: 10px;
+    font-size: 2.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#footer .div2 {
+    margin-top: 15px;
+}
+
+#footer .margin-f {
+    margin-left: 10px;
+}
+
+
+
+
+      /*pjesa e madhsise se faqes */
+    .cols-1 {width: 8.33%;}
+    .cols-2 {width: 16.66%;}
+    .cols-3 {width: 25%;}
+    .cols-4 {width: 33.33%;}
+    .cols-5 {width: 41.66%;}
+    .cols-6 {width: 50%;}
+    .cols-7 {width: 58.33%;}
+    .cols-8 {width: 66.66%;}
+    .cols-9 {width: 75%;}
+    .cols-10 {width: 83.33%;}
+    .cols-11 {width: 91.66%;}
+    .cols-12 {width: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------*/
+
+
+
+/*pjesa per telefon min-width (min-width: 600px)*/
+
+@media only screen and (min-width: 600px) {
+    /*pjesa per telefon ner 600px */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    /*  background-color: green; */ 
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 50px;
+    }
+    
+    
+    /*pjesa e headr-it*/
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 3vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 3.2vw;
+    }
+    
+    header #ul {
+        display: none;
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.25vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    /*pjesa hamburger - menu */
+    
+    header .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgb(0,0,0);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      header   .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      header .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      header .overlay a:hover, .overlay a:focus, #active-li {
+        color: #f1f1f1;
+      }
+      
+      header .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+
+
+
+
+      /*pjesa e section te about us */
+
+      #header-section {
+        position: relative;
+        top: 100px;
+        height: 300px;
+        background-image: url(foto2studenteve.jpg);
+        background-repeat: no-repeat;
+        background-position: 100% 30%;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    
+    #header-section #opacity {
+        height: 100%;
+        background-color: rgba(84, 79, 78, 0.65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    
+    #header-section #opacity #about-us {
+        font-size: 6vw;
+        color: white;
+        font-family:sans-serif;
+        font-weight: bolder;
+        word-spacing: 3px;
+        text-transform:capitalize;
+        animation: anime 2s linear  infinite;
+    }
+    
+    @keyframes anime {
+        0% {
+            color: white;
+        }
+    
+        50% {
+            color: rgb(204, 197, 197);
+        }
+    
+        100% {
+            color: rgb(248, 248, 248);
+        }
+    }
+
+
+
+
+
+  /*pjesa e mapi*/
+   #boxx {
+      position: relative;
+      top: 100px;
+      margin-top: 100px;
+      height: auto;
+  }
+  
+  #boxx #img-l {
+      height: 400px;
+  }
+
+
+
+
+
+  /*pjesa e regjistrimit */
+  #register {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+#register .col-padd {
+    background-color: rgba(207, 203, 203, 0.2);
+    padding: 50px 50px;
+}
+
+label {
+    font-size: 2.7vw;
+    letter-spacing: 0.8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+}
+
+input, select, textarea {
+    border: 1px solid rgb(171, 170, 170);
+    font-size: 2.5vw;
+    padding: 5px 5px;
+    margin-top: 10px;
+}
+
+
+
+#button1 {
+    padding: 8px 10px;
+    font-size: 2.5vw;
+    border: 1px solid rgb(171, 170, 170);
+    transition: border .5s ease;
+    cursor: pointer;
+    transition: background-color .5s ease, color .3s ease-out;
+}
+
+
+#button1:hover {
+    background-color: rgb(19, 166, 215);
+    border: 1px solid rgba(207, 203, 203, 0.2);
+    color: white;
+}
+
+
+
+
+#register .col-padd .box-h {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#register .col-padd .box-h #h-reg {
+    font-size: 4vw;
+    font-weight: bold;
+    color: rgb(112, 109, 109);
+} 
+
+#register .col-padd .box-h #paragraf-20 {
+    font-weight: lighter;
+    font-size: 2.5vw;
+    color: rgba(104, 101, 101, 0.9);
+    position: relative;
+    top: 0;
+}
+
+
+
+
+
+
+/*pjesa e regjistrumit */
+#register .col-padd .box-h #r-form {
+    display: block;
+}
+
+#form {
+    margin-top: 100px;
+}
+
+.box-input {
+    margin-top: 20px;
+}
+
+
+#textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+}
+
+
+
+
+
+
+
+/*pjesa e footer */
+
+#footer {
+position: relative;
+margin-top: 200px;
+top: 100px;
+color: white;
+padding-top: 10px;
+padding-bottom: 50px;
+background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+}
+
+#footer #header51 {
+font-size: 2.4vw;
+text-align: center;
+font-weight: 900;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-bottom: 50px;
+}
+
+#footer #flex-f {
+display: block;
+text-align: center;
+}
+
+#footer .cl2 {
+margin-right: 0;
+}
+
+#footer .cl {
+margin-top: 5px;
+font-family: sans-serif;
+}
+
+#footer #flex-f .cl3 .div-s {
+display: block;
+}
+
+#footer .fl {
+display: inline;
+}
+
+#footer .header6 {
+margin-top: 5px;
+font-size: 2vw;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#footer .div2 {
+margin-top: 15px;
+}
+
+#footer .margin-f {
+margin-left: 10px;
+}
+
+
+
+       /*pjesa e madhsise se faqes */
+    .cols-1 {width: 8.33%;}
+    .cols-2 {width: 16.66%;}
+    .cols-3 {width: 25%;}
+    .cols-4 {width: 33.33%;}
+    .cols-5 {width: 41.66%;}
+    .cols-6 {width: 50%;}
+    .cols-7 {width: 58.33%;}
+    .cols-8 {width: 66.66%;}
+    .cols-9 {width: 75%;}
+    .cols-10 {width: 83.33%;}
+    .cols-11 {width: 91.66%;}
+    .cols-12 {width: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------ */
+
+
+/*pjesa per telefon min-width (min-width)*/
+
+@media only screen and (min-width: 768px) {
+    /*pjesa per telefon ner 600px */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+       /* background-color: pink; */
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 50px;
+    }
+    
+    
+    /*pjesa e headr-it*/
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 3vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 3.2vw;
+    }
+    
+    header #ul {
+        display: none;
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.25vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    /*pjesa hamburger - menu */
+    
+    header .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgb(0,0,0);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      header   .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      header .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      header .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      header .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+
+
+
+      /*pjesa e section te about us */
+
+      #header-section {
+        position: relative;
+        top: 100px;
+        height: 300px;
+        background-image: url(foto2studenteve.jpg);
+        background-repeat: no-repeat;
+        background-position: 100% 30%;
+        background-size: cover;
+    }
+    
+    
+    #header-section #opacity {
+        height: 100%;
+        background-color: rgba(84, 79, 78, 0.65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    
+    #header-section #opacity #about-us {
+        font-size: 4vw;
+        color: white;
+        font-family:sans-serif;
+        font-weight: bolder;
+        word-spacing: 3px;
+        animation: anime 2s linear  infinite;
+    }
+    
+    @keyframes anime {
+        0% {
+            color: white;
+        }
+    
+        50% {
+            color: rgb(204, 197, 197);
+        }
+    
+        100% {
+            color: rgb(248, 248, 248);
+        }
+    }
+
+
+
+
+
+  /*pjesa e mapi*/
+   #boxx {
+      position: relative;
+      top: 100px;
+      margin-top: 100px;
+      height: auto;
+  }
+  
+  #boxx #img-l {
+      height: 400px;
+  }
+
+
+
+
+
+  /*pjesa e regjistrimit */
+  #register {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+#register .col-padd {
+    background-color: rgba(207, 203, 203, 0.2);
+    padding: 50px 50px;
+}
+
+label {
+    font-size: 2.7vw;
+    letter-spacing: 0.8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+}
+
+input, select, textarea {
+    border: 1px solid rgb(171, 170, 170);
+    font-size: 2.5vw;
+    padding: 5px 5px;
+    margin-top: 10px;
+}
+
+
+
+#button1 {
+    padding: 8px 10px;
+    font-size: 2.5vw;
+    border: 1px solid rgb(171, 170, 170);
+    transition: border .5s ease;
+    cursor: pointer;
+    transition: background-color .5s ease, color .3s ease-out;
+}
+
+
+#button1:hover {
+    background-color: rgb(19, 166, 215);
+    border: 1px solid rgba(207, 203, 203, 0.2);
+    color: white;
+}
+
+
+
+
+#register .col-padd .box-h {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#register .col-padd .box-h #h-reg {
+    font-size: 4vw;
+    font-weight: bold;
+    color: rgb(112, 109, 109);
+} 
+
+#register .col-padd .box-h #paragraf-20 {
+    font-weight: lighter;
+    font-size: 2.2vw;
+    color: rgba(104, 101, 101, 0.9);
+    position: relative;
+    top: 0;
+}
+
+
+
+
+
+
+/*pjesa e regjistrumit */
+#register .col-padd .box-h #r-form {
+    display: block;
+}
+
+#form {
+    margin-top: 100px;
+}
+
+.box-input {
+    margin-top: 20px;
+}
+
+
+#textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+}
+
+
+
+
+
+
+
+/*pjesa e footer */
+
+#footer {
+position: relative;
+margin-top: 200px;
+top: 100px;
+color: white;
+padding-top: 10px;
+padding-bottom: 50px;
+background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+}
+
+#footer #header51 {
+font-size: 2.4vw;
+text-align: center;
+font-weight: 900;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-bottom: 50px;
+}
+
+#footer #flex-f {
+display: block;
+text-align: center;
+}
+
+#footer .cl2 {
+margin-right: 0;
+}
+
+#footer .cl {
+margin-top: 5px;
+font-family: sans-serif;
+}
+
+#footer #flex-f .cl3 .div-s {
+display: block;
+}
+
+#footer .fl {
+display: inline;
+}
+
+#footer .header6 {
+margin-top: 5px;
+font-size: 2vw;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#footer .div2 {
+margin-top: 15px;
+}
+
+#footer .margin-f {
+margin-left: 10px;
+}
+
+
+
+       /*pjesa e madhsise se faqes */
+    .cols-1 {width: 8.33%;}
+    .cols-2 {width: 16.66%;}
+    .cols-3 {width: 25%;}
+    .cols-4 {width: 33.33%;}
+    .cols-5 {width: 41.66%;}
+    .cols-6 {width: 50%;}
+    .cols-7 {width: 58.33%;}
+    .cols-8 {width: 66.66%;}
+    .cols-9 {width: 75%;}
+    .cols-10 {width: 83.33%;}
+    .cols-11 {width: 91.66%;}
+    .cols-12 {width: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- */
+
+
+
+/*pjesa per desktop te kompjuterit per paisje te medha */
+
+@media only screen and (min-width: 992px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 80px;
+    }
+    
+    /*Pjesa e headerit */
+    header {
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 2vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 2.2vw;
+    }
+    
+    header #ul {
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 110px;
+        font-size: 1.7vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    header .overlay {
+        display: none;
+    }
+    
+    header #menu {
+        display: none;
+    }
+    
+    /*
+    .li1, .li2, .li3, .li4, .li5 {
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    
+    .li1:hover, .li2:hover, .li3:hover, .li4:hover, .li5:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    /*pjesa per a */
+    .a {
+        text-decoration: none;
+        color: rgb(60, 57, 57);
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    #active {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    header #ul::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+    
+    
+    
+    
+    
+    /*pjesa e section te about us */
+    
+    #header-section {
+        position: relative;
+        top: 100px;
+        height: 400px;
+        background-image: url(foto2studenteve.jpg);
+        background-repeat: no-repeat;
+        background-position: 100% 40%;
+        background-size: cover;
+    }
+    
+    
+    #header-section #opacity {
+        height: 100%;
+        background-color: rgba(84, 79, 78, 0.65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    
+    #header-section #opacity #about-us {
+        font-size: 4vw;
+        color: white;
+        font-family:sans-serif;
+        font-weight: bolder;
+        word-spacing: 3px;
+        text-transform:capitalize;
+        animation: anime 2s linear  infinite;
+    }
+    
+    @keyframes anime {
+        0% {
+            color: white;
+        }
+    
+        50% {
+            color: rgb(204, 197, 197);
+        }
+    
+        100% {
+            color: rgb(248, 248, 248);
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    /*pjesa e mapi-it */
+    #boxx {
+        position: relative;
+        top: 100px;
+        margin-top: 100px;
+        height: auto;
+    }
+    
+    #boxx #img-l {
+        height: 400px;
+    }
+    
+    
+    
+    
+    
+    /*pjesa e regjistrimit */
+    #register {
+        position: relative;
+        top: 100px;
+        margin-top: 100px;
+        display: block;
+    }
+    
+    #register .col-padd {
+        background-color: rgba(207, 203, 203, 0.2);
+        padding: 0 50px 50px;
+        display: block;
+    }
+    
+    label {
+        margin-top: 5px;
+        font-size: 1.8vw;
+        letter-spacing: 0.8px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    input, select, textarea {
+        border: 1px solid rgb(171, 170, 170);
+        font-size: 1.5vw;
+        padding: 5px 5px;
+    }
+    
+    
+    
+    #button1 {
+        float: right;
+        padding: 10px;
+        font-size: 1.5vw;
+        border: 1px solid rgb(171, 170, 170);
+        transition: border .5s ease;
+        cursor: pointer;
+        transition: background-color .5s ease, color .3s ease-out;
+    }
+    
+    
+    #button1:hover {
+        background-color: rgb(19, 166, 215);
+        border: 1px solid rgba(207, 203, 203, 0.2);
+        color: white;
+    }
+    
+    
+    
+    
+    #register .col-padd .box-h {
+        display: flex;
+        text-align: center;
+        font-family: sans-serif;
+        flex-direction: column;
+    }
+    
+    #register .col-padd .box-h #h-reg {
+        font-size: 2.5vw;
+        font-weight: bold;
+        color: rgb(112, 109, 109);
+    } 
+    
+    #register .col-padd .box-h #paragraf-20 {
+        font-weight: lighter;
+        font-size: 1.15vw;
+        color: rgba(104, 101, 101, 0.9);
+        position: relative;
+        top: -5px;
+    }
+    
+    
+    
+    /*pjesa e regjistrumit */
+    #register .col-padd .box-h #r-form {
+        display: block;
+    }
+    
+    #form {
+        margin-top: 100px;
+    }
+    
+    .box-input {
+        margin-top: 20px;
+    }
+    
+    .fl {
+        float: left;
+    }
+    
+    .box-input::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+    #textarea {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        resize: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*pjesa e footer */
+    
+    #footer {
+        position: relative;
+        margin-top: 100px;
+        top: 100px;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+    }
+    
+    #footer #header51 {
+        font-size: 2vw;
+        text-align: center;
+        font-weight: 900;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    #footer #flex-f {
+        margin-right: 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    #footer .cl {
+        font-family: sans-serif;
+    }
+
+    .inl-div {
+        display: inline-block;
+    }
+    
+    #footer #flex-f .cl3 .div-s {
+        display: block;
+    }
+    
+    #footer .fl {
+        font-size: 2vw;
+    }
+    
+    #footer .header6 {
+        font-size: 1.5vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    
+    #footer .div2 {
+        margin-top: -30px;
+    }
+    
+    #footer .margin-f {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+    
+    
+    
+    
+    
+    
+    /*pjesa e madhsise se faqes */
+    .cols-1 {width: 8.33%;}
+    .cols-2 {width: 16.66%;}
+    .cols-3 {width: 25%;}
+    .cols-4 {width: 33.33%;}
+    .cols-5 {width: 41.66%;}
+    .cols-6 {width: 50%;}
+    .cols-7 {width: 58.33%;}
+    .cols-8 {width: 66.66%;}
+    .cols-9 {width: 75%;}
+    .cols-10 {width: 83.33%;}
+    .cols-11 {width: 91.66%;}
+    .cols-12 {width: 100%;}
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*/
+
+/*pjesa per desktop te kompjuterit per paisje te medha */
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+      /*  background-color: yellow; */
+    }
+
+
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 100px;
+    }
+    
+    /*Pjesa e headerit */
+    header {
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 1.6vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 1.75vw;
+    }
+    
+    header #ul {
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.38vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    header .overlay {
+        display: none;
+    }
+    
+    header #menu {
+        display: none;
+    }
+    
+    /*
+    .li1, .li2, .li3, .li4, .li5 {
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    
+    .li1:hover, .li2:hover, .li3:hover, .li4:hover, .li5:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    /*pjesa per a */
+    .a {
+        text-decoration: none;
+        color: rgb(60, 57, 57);
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    #active {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    header #ul::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+    
+    
+    
+    
+    
+    /*pjesa e section te about us */
+    
+    #header-section {
+        position: relative;
+        top: 100px;
+        height: 400px;
+        background-image: url(foto2studenteve.jpg);
+        background-repeat: no-repeat;
+        background-position: 100% 40%;
+        background-size: cover;
+    }
+    
+    
+    #header-section #opacity {
+        height: 100%;
+        background-color: rgba(84, 79, 78, 0.65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    
+    #header-section #opacity #about-us {
+        font-size: 3.2vw;
+        color: white;
+        font-family:sans-serif;
+        font-weight: bolder;
+        word-spacing: 3px;
+        text-transform:capitalize;
+        animation: anime 2s linear  infinite;
+    }
+    
+    @keyframes anime {
+        0% {
+            color: white;
+        }
+    
+        50% {
+            color: rgb(204, 197, 197);
+        }
+    
+        100% {
+            color: rgb(248, 248, 248);
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    /*pjesa e mapi-it */
+    #boxx {
+        position: relative;
+        top: 100px;
+        margin-top: 100px;
+        height: auto;
+    }
+    
+    #boxx #img-l {
+        height: 400px;
+    }
+    
+    
+    
+    
+    
+    /*pjesa e regjistrimit */
+    #register {
+        position: relative;
+        top: 100px;
+        margin-top: 100px;
+        display: block;
+    }
+    
+    #register .col-padd {
+        background-color: rgba(207, 203, 203, 0.2);
+        padding: 0 50px 50px;
+        display: block;
+    }
+    
+    label {
+        margin-top: 5px;
+        font-size: 1.8vw;
+        letter-spacing: 0.8px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    input, select, textarea {
+        border: 1px solid rgb(171, 170, 170);
+        font-size: 1.5vw;
+        padding: 5px 5px;
+    }
+    
+    
+    
+    #button1 {
+        float: right;
+        padding: 10px;
+        font-size: 1.8vw;
+        border: 1px solid rgb(171, 170, 170);
+        transition: border .5s ease;
+        cursor: pointer;
+        transition: background-color .5s ease, color .3s ease-out;
+    }
+    
+    
+    #button1:hover {
+        background-color: rgb(19, 166, 215);
+        border: 1px solid rgba(207, 203, 203, 0.2);
+        color: white;
+    }
+    
+    
+    
+    
+    #register .col-padd .box-h {
+        display: flex;
+        text-align: center;
+        font-family: sans-serif;
+        flex-direction: column;
+    }
+    
+    #register .col-padd .box-h #h-reg {
+        font-size: 2.15vw;
+        font-weight: bold;
+        color: rgb(112, 109, 109);
+    } 
+    
+    #register .col-padd .box-h #paragraf-20 {
+        font-weight: lighter;
+        font-size: 1.15vw;
+        color: rgba(104, 101, 101, 0.9);
+        position: relative;
+        top: -5px;
+    }
+    
+
+
+
+    
+    
+
+    /*pjesa e regjistrimit */
+    #register {
+        position: relative;
+        top: 100px;
+        margin-top: 100px;
+        display: block;
+    }
+    
+    #register .col-padd {
+        background-color: rgba(207, 203, 203, 0.2);
+        padding: 0 50px 50px;
+        display: block;
+    }
+    
+    label {
+        margin-top: 5px;
+        font-size: 1.5vw;
+        letter-spacing: 0.8px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    input, select, textarea {
+        border: 1px solid rgb(171, 170, 170);
+        font-size: 1.3vw;
+        padding: 5px 5px;
+    }
+    
+    
+    
+    #button1 {
+        float: right;
+        padding: 10px;
+        font-size: 1.2vw;
+        border: 1px solid rgb(171, 170, 170);
+        transition: border .5s ease;
+        cursor: pointer;
+        transition: background-color .5s ease, color .3s ease-out;
+    }
+    
+    
+    #button1:hover {
+        background-color: rgb(19, 166, 215);
+        border: 1px solid rgba(207, 203, 203, 0.2);
+        color: white;
+    }
+    
+    
+    
+    
+    #register .col-padd .box-h {
+        display: flex;
+        text-align: center;
+        font-family: sans-serif;
+        flex-direction: column;
+    }
+    
+    #register .col-padd .box-h #h-reg {
+        font-size: 2.5vw;
+        font-weight: bold;
+        color: rgb(112, 109, 109);
+    } 
+    
+    #register .col-padd .box-h #paragraf-20 {
+        font-weight: lighter;
+        font-size: 1.15vw;
+        color: rgba(104, 101, 101, 0.9);
+        position: relative;
+        top: -5px;
+    }
+    
+    
+
+
+
+
+
+
+
+    
+    /*pjesa e regjistrumit */
+    #register .col-padd .box-h #r-form {
+        display: block;
+    }
+    
+    #form {
+        margin-top: 100px;
+    }
+    
+    .box-input {
+        margin-top: 20px;
+    }
+    
+    .fl {
+        float: left;
+    }
+    
+    .box-input::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    
+    #textarea {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        resize: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      /*pjesa e footer */
+    
+    #footer {
+        position: relative;
+        margin-top: 100px;
+        top: 100px;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+    }
+    
+    #footer #header51 {
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: 900;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    #footer #flex-f {
+        margin-right: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    #footer .cl {
+        font-family: sans-serif;
+    }
+
+    .inl-div {
+        display: inline-block;
+    }
+    
+    #footer #flex-f .cl3 .div-s {
+        display: block;
+    }
+    
+    #footer .fl {
+        font-size: 1.4vw;
+    }
+    
+    #footer .header6 {
+        font-size: 1.18vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    
+    #footer .div2 {
+        margin-top: -30px;
+    }
+    
+    #footer .margin-f {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+
+
+
+    
+    
+    /*pjesa e madhsise se faqes */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
