@@ -1,0 +1,3619 @@
+@media only screen and (max-width: 600px) {
+/*pjesa per telefon ner 600px */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.a:hover {
+    color: rgb(131,137,150);
+}
+
+.content {
+    padding: 0 30px;
+}
+
+
+/*pjesa e headr-it*/
+header {
+    max-width: 100%;
+    height: 100px;
+    background-color: rgb(245,245,245);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    z-index: 2;
+    user-select: none;
+}
+
+header #logo-name {
+    display: flex;
+    align-items: center;
+}
+
+header #logo-name #logo {
+    margin-right: 10px;
+}
+
+header #logo-name #logo #img1 {
+    max-width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+
+header #logo-name #name-sch {
+    font-size: 3vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(79, 75, 75);
+    letter-spacing: 0.5px;
+}
+
+header #logo-name #name-sch #nick-name {
+    text-transform: uppercase;
+    font-size: 3.2vw;
+}
+
+header #ul {
+    display: none;
+    list-style-type: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header #ul .li {
+    float: left;
+    max-width: 120px;
+    font-size: 1.25vw;
+    margin-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*pjesa hamburger - menu */
+
+header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0,0,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  header   .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  header .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  header .overlay a:hover, .overlay a:focus, #active-li {
+    color: #f1f1f1;
+  }
+  
+  header .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+
+
+
+  /*pjesa e section ne fillim */
+  #section {
+    height: 400px;
+    background-image: url(fotoshkolles.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 100% 100%;
+    position: relative;
+    top: 100px;
+}
+
+
+#section #left-header {
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(8, 8, 55), rgba(8, 8, 55, 0.74), rgba(8, 8, 55, 0.7),
+     rgba(8, 8, 55, 0.6));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#section #left-header #breaking {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+
+#section #left-header #header1 {
+    font-size: 3.7vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    text-align: center
+}
+
+#section #left-header #nick-namep2 {
+    font-size: 4.2vw;
+}
+
+#section #left-header #pargarph-slogan {
+    font-size: 3vw;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    word-spacing: 1px;
+    letter-spacing: 0.2px;
+}
+
+#section #left-header #button-h {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 3.5vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#section #left-header #button-h:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+/*pjesa e slaider-it */
+#slider {
+    position: relative;
+    margin-top: 100px;
+    top: 100px
+}
+
+#slider #div-sec {
+    margin: auto;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#slider #div-sec #header12 {
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+
+#slider #div-sec #paragraph-slider {
+    font-weight: lighter;
+    font-size: 3.15vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*kjo pjese kaq ene ne dy kolona per desktopa te mdhenje dhe prandaj ne duhet te krijojme tjera elemnete dhe prandaj eshte display none*/
+.slider {
+    display: none;
+}
+
+
+.slider2 {
+    /* Vendosni gjeresinë e sliderit sipas nevojës */
+       height: 300px; /* Vendosni lartësinë e sliderit sipas nevojës */
+       position: relative;
+       overflow: hidden;
+       margin-top: 50px;
+     }
+     
+     .slide2 {
+     /* Vendosni gjeresinë e slidereve sipas nevojës */
+       height: 100%; /* Vendosni lartësinë e slidereve sipas nevojës */
+       position: absolute;
+       top: 0;
+       left: 0;
+       opacity: 0;
+       transition: opacity 0.5s ease;
+     }
+     
+     .slide2.active {
+       opacity: 1;
+     }
+   
+     .g-slider {
+       /*nuk do te shenojme asgje sepse ka qene ne display grid */
+     }
+   
+     .box {
+       background-color: rgba(255,228,225, 0.45);
+       padding: 10px 30px;
+       text-align: center;
+     }
+   
+     .box .header4 {
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-weight: bold;
+       font-size: 3.7vw;
+     }
+   
+     .box .paragraf {
+       font-family: sans-serif;
+       font-weight: lighter;
+       letter-spacing: 0.5px;
+       color: rgb(110, 108, 108);
+       line-height: 25px;
+       font-size: 3.09vw;
+     }
+
+
+
+    
+
+
+/*Pjesa e obijeketeve */
+
+#obj {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#obj #div-obj {
+    margin: 100px auto;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#obj #div-obj #header1211 {
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+#obj #div-obj #paragraph-slider1211 {
+    font-weight: lighter;
+    font-size: 3.15vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*pjesa e artikujve te obijekteve */
+
+#boxesi {
+    display: block;
+}
+
+#boxesi .boxi {
+    display: block;
+    height: auto;
+    box-shadow: 5px 3px 30px rgb(155, 152, 152);
+    margin-top: 50px;
+}
+
+
+#boxesi .boxi .img3 {
+    width: 100%;
+    height: 250px;
+}
+
+#boxesi .boxi .img3 .img31 {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+
+
+#boxesi .boxi .contents-b {
+    padding: 20px 20px 30px;
+}
+
+#boxesi .boxi .contents-b .header411 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 3.25vw;
+}
+
+#boxesi .boxi .contents-b .paragraph441 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 118, 118);
+    user-select: none;
+    font-size: 3.07vw;
+}
+
+
+
+
+
+
+/*sektori i studenteve ku shprehen */
+
+#students {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#students #div-obj {
+    margin: 200px auto 50px;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#students #div-obj #header1222 {
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+#students #div-obj #paragraph-slider1222 {
+    font-weight: lighter;
+    font-size: 3.15vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+
+#students #grid-column {
+    display: block;
+}
+
+#students #grid-column .box-n {
+    background-color: rgba(255,228,225, 0.45);
+    margin-top: 30px;
+}
+
+
+
+#students #grid-column .box-n  .lin-back {
+    width: 100%;;
+    height: 100%;
+    padding: 20px 20px 5px;
+    line-height: 23px;
+    background-image: linear-gradient(to right, transparent 95%, rgba(26, 24, 24, 0.1));
+}
+
+
+
+.lin-1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.lin-2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+
+.boxnr1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.boxnr2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+#students #grid-column .box-n .rel-nameimg {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 0;
+}
+
+#students #grid-column .box-n .rel-nameimg .img-rel {
+    max-width: 60px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+#students #grid-column .box-n .rel-nameimg .p-students {
+    margin-top: 0;
+    margin-left: -30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3.05vw;
+    color: rgb(102, 100, 100);
+}
+
+
+#students #grid-column .box-n .name-of-student {
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+/*Per staff */
+#staff {
+    height: 300px;
+    position: relative;
+    top: 100px;
+    margin-top: 200px;
+}
+
+#staff #box-staff {
+    height: 100%;
+    background-image: url(fotostaff.jpg);
+    background-position: 10% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#staff #box-staff #header1-sch {
+    font-size: 4vw;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+
+#staff #box-staff #paragraph-1 {
+    font-size: 2.5vw;
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#staff #box-staff .b {
+    color: red;
+    font-weight: 900;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+#staff #box-staff #regist {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 30px auto;
+    font-size: 3.3vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#staff #box-staff #regist:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+
+/*about us */
+#about1 {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+#about1 #about-us {
+    display: flex;
+    justify-content: center;
+}
+
+#about1 #about-us  #header-about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4.35vw;
+    font-weight: bolder;
+}
+
+
+#about1 #about1-us {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#about1 #about1-us {
+    font-size: 3.15vw;
+    font-weight: lighter;
+    color: rgb(102, 100, 100);
+    font-family: sans-serif;
+    line-height: 22px;
+}
+
+.b1 {
+    color: rgb(36, 36, 36);
+}
+
+
+/*
+.b-e {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1..07vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+*/
+
+
+#a11 {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1..07vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+#a11:hover {
+    background-color: rgb(255,69,0);
+    color: white;
+}
+
+
+
+
+
+/*pjesa e footer */
+
+#footer {
+    position: relative;
+    margin-top: 100px;
+    top: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+}
+
+#footer #header51 {
+    font-size: 3.15vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+}
+
+#footer #flex-f {
+    display: block;
+    text-align: center;
+}
+
+#footer .cl2 {
+    margin-right: 0;
+}
+
+#footer .cl {
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+#footer #flex-f .cl3 .div-s {
+    display: block;
+}
+
+#footer .fl {
+    display: inline;
+}
+
+#footer .header6 {
+    margin-top: 10px;
+    font-size: 2.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#footer .div2 {
+    margin-top: 15px;
+}
+
+#footer .margin-f {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+/*pjesa e madhsise se faqes */
+.cols-1 {width: 8.33%;}
+.cols-2 {width: 16.66%;}
+.cols-3 {width: 25%;}
+.cols-4 {width: 33.33%;}
+.cols-5 {width: 41.66%;}
+.cols-6 {width: 50%;}
+.cols-7 {width: 58.33%;}
+.cols-8 {width: 66.66%;}
+.cols-9 {width: 75%;}
+.cols-10 {width: 83.33%;}
+.cols-11 {width: 91.66%;}
+.cols-12 {width: 100%;}
+
+
+
+}
+
+
+
+
+
+
+
+    /*pjesa per telefon min-width (min-width: 600px)*/
+
+@media only screen and (min-width: 600px) {
+    /*pjesa per telefon ner 600px */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    /*  background-color: green; */ 
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 50px;
+    }
+    
+    
+    /*pjesa e headr-it*/
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 3vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 3.2vw;
+    }
+    
+    header #ul {
+        display: none;
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.25vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    /*pjesa hamburger - menu */
+    
+    header .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgb(0,0,0);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      header   .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      header .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      header .overlay a:hover, .overlay a:focus, #active-li {
+        color: #f1f1f1;
+      }
+      
+      header .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+
+
+
+
+
+
+/*pjesa e section*/
+#section {
+    height: 450px;
+    background-image: url(fotoshkolles.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 100% 100%;
+    position: relative;
+    top: 100px;
+}
+
+#section #left-header {
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(8, 8, 55), rgba(8, 8, 55, 0.74), rgba(8, 8, 55, 0.7),
+     rgba(8, 8, 55, 0.6));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+#section #left-header #breaking {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+
+#section #left-header #header1 {
+    font-size: 5vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    text-align: center;
+}
+
+#section #left-header #nick-namep2 {
+    font-size: 5.2vw;
+}
+
+#section #left-header #pargarph-slogan {
+    font-size: 2.3vw;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+}
+
+#section #left-header #button-h {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 2.5vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#section #left-header #button-h:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+/*pjesa e slaider-it */
+#slider {
+    position: relative;
+    margin-top: 100px;
+    top: 100px
+}
+
+#slider #div-sec {
+    margin: auto;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#slider #div-sec #header12 {
+    font-size: 4.5vw;
+    font-weight: bolder;
+}
+
+
+#slider #div-sec #paragraph-slider {
+    font-weight: lighter;
+    font-size: 3vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*kjo pjese kaq ene ne dy kolona per desktopa te mdhenje dhe prandaj ne duhet te krijojme tjera elemnete dhe prandaj eshte display none*/
+.slider {
+    display: none;
+}
+
+
+.slider2 {
+    /* Vendosni gjeresinë e sliderit sipas nevojës */
+       height: 300px; /* Vendosni lartësinë e sliderit sipas nevojës */
+       position: relative;
+       overflow: hidden;
+       margin-top: 50px;
+     }
+     
+     .slide2 {
+     /* Vendosni gjeresinë e slidereve sipas nevojës */
+       height: 100%; /* Vendosni lartësinë e slidereve sipas nevojës */
+       position: absolute;
+       top: 0;
+       left: 0;
+       opacity: 0;
+       transition: opacity 0.5s ease;
+     }
+     
+     .slide2.active {
+       opacity: 1;
+     }
+   
+     .g-slider {
+       /*nuk do te shenojme asgje sepse ka qene ne display grid */
+     }
+   
+     .box {
+       background-color: rgba(255,228,225, 0.45);
+       padding: 10px 30px;
+       text-align: center;
+     }
+   
+     .box .header4 {
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-weight: bold;
+       font-size: 3.2vw;
+     }
+   
+     .box .paragraf {
+       font-family: sans-serif;
+       font-weight: lighter;
+       letter-spacing: 0.5px;
+       color: rgb(110, 108, 108);
+       line-height: 25px;
+       font-size: 3vw;
+     }
+
+
+
+
+
+
+
+
+     /*Pjesa e obijeketeve */
+
+#obj {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#obj #div-obj {
+    margin: 100px auto;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#obj #div-obj #header1211 {
+    font-size: 4.5vw;
+    font-weight: bolder;
+}
+
+#obj #div-obj #paragraph-slider1211 {
+    font-weight: lighter;
+    font-size: 3vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*pjesa e artikujve te obijekteve */
+
+#boxesi {
+    padding: 0 20px;
+  /*border: 1px solid red;*/
+    display: block;
+}
+
+#boxesi .boxi {
+    display: block;
+    height: auto;
+    box-shadow: 5px 3px 30px rgb(155, 152, 152);
+    margin-top: 50px;
+}
+
+
+#boxesi .boxi .img3 {
+    width: 100%;
+    height: 300px;
+}
+
+#boxesi .boxi .img3 .img31 {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+
+
+#boxesi .boxi .contents-b {
+    padding: 20px 20px 30px;
+}
+
+#boxesi .boxi .contents-b .header411 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 3.25vw;
+}
+
+#boxesi .boxi .contents-b .paragraph441 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 118, 118);
+    user-select: none;
+    font-size: 3.05vw;
+}
+
+
+
+
+
+
+/*sektori i studenteve ku shprehen */
+
+#students {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#students #div-obj {
+    margin: 200px auto 50px;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#students #div-obj #header1222 {
+    font-size: 4.5vw;
+    font-weight: bolder;
+}
+
+#students #div-obj #paragraph-slider1222 {
+    font-weight: lighter;
+    font-size: 3.15vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+
+#students #grid-column {
+    display: block;
+}
+
+#students #grid-column .box-n {
+    background-color: rgba(255,228,225, 0.45);
+    margin-top: 30px;
+}
+
+
+
+#students #grid-column .box-n  .lin-back {
+    width: 100%;;
+    height: 100%;
+    padding: 20px 20px 5px;
+    line-height: 25px;
+    background-image: linear-gradient(to right, transparent 95%, rgba(26, 24, 24, 0.1));
+}
+
+
+
+.lin-1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.lin-2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+
+.boxnr1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.boxnr2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+#students #grid-column .box-n .rel-nameimg {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 0;
+}
+
+#students #grid-column .box-n .rel-nameimg .img-rel {
+    max-width: 60px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+#students #grid-column .box-n .rel-nameimg .p-students {
+    margin-top: 0;
+    margin-left: -30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3.05vw;
+    color: rgb(102, 100, 100);
+}
+
+
+#students #grid-column .box-n .name-of-student {
+    text-align: center;
+    font-size: 3.2vw;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+/*Per staff */
+#staff {
+    height: 500px;
+    position: relative;
+    top: 100px;
+    margin-top: 200px;
+}
+
+#staff #box-staff {
+    height: 100%;
+    background-image: url(fotostaff.jpg);
+    background-position: 10% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#staff #box-staff #header1-sch {
+    font-size: 4vw;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+
+#staff #box-staff #paragraph-1 {
+    font-size: 2.5vw;
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#staff #box-staff .b {
+    color: red;
+    font-weight: 900;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+#staff #box-staff #regist {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 3.3vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#staff #box-staff #regist:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+
+/*about us */
+#about1 {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+#about1 #about-us {
+    display: flex;
+    justify-content: center;
+}
+
+#about1 #about-us  #header-about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+
+#about1 #about1-us {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#about1 #about1-us {
+    font-size: 3vw;
+    font-weight: lighter;
+    color: rgb(102, 100, 100);
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+.b1 {
+    color: rgb(36, 36, 36);
+}
+
+
+/*
+.b-e {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1..07vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+*/
+
+
+#a11 {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1..07vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+#a11:hover {
+    background-color: rgb(255,69,0);
+    color: white;
+}
+
+
+
+
+
+
+
+/*pjesa e footer */
+
+#footer {
+    position: relative;
+    margin-top: 200px;
+    top: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+    }
+    
+    #footer #header51 {
+    font-size: 2.4vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+    }
+    
+    #footer #flex-f {
+    display: block;
+    text-align: center;
+    }
+    
+    #footer .cl2 {
+    margin-right: 0;
+    }
+    
+    #footer .cl {
+    margin-top: 5px;
+    font-family: sans-serif;
+    }
+    
+    #footer #flex-f .cl3 .div-s {
+    display: block;
+    }
+    
+    #footer .fl {
+    display: inline;
+    }
+    
+    #footer .header6 {
+    margin-top: 5px;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    
+    #footer .div2 {
+    margin-top: 15px;
+    }
+    
+    #footer .margin-f {
+    margin-left: 10px;
+    }
+
+
+
+
+
+
+
+
+  /*pjesa e madhsise se faqes */
+.cols-1 {width: 8.33%;}
+.cols-2 {width: 16.66%;}
+.cols-3 {width: 25%;}
+.cols-4 {width: 33.33%;}
+.cols-5 {width: 41.66%;}
+.cols-6 {width: 50%;}
+.cols-7 {width: 58.33%;}
+.cols-8 {width: 66.66%;}
+.cols-9 {width: 75%;}
+.cols-10 {width: 83.33%;}
+.cols-11 {width: 91.66%;}
+.cols-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+/*pjesa per telefon min-width (min-width)*/
+
+@media only screen and (min-width: 768px) {
+    /*pjesa per telefon ner 600px */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+     /* background-color: pink;*/
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 50px;
+    }
+    
+    
+    /*pjesa e headr-it*/
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 3vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 3.2vw;
+    }
+    
+    header #ul {
+        display: none;
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.25vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    /*pjesa hamburger - menu */
+    
+    header .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgb(0,0,0);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      header   .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      header .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      header .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      header .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+
+
+
+
+
+
+
+      /*pjesa e section*/
+#section {
+    height: 500px;
+    background-image: url(fotoshkolles.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 100% 100%;
+    position: relative;
+    top: 100px;
+}
+
+#section #left-header {
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(8, 8, 55), rgba(8, 8, 55, 0.74), rgba(8, 8, 55, 0.7),
+     rgba(8, 8, 55, 0.6));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+#section #left-header #breaking {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+
+#section #left-header #header1 {
+    font-size: 4vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    text-align: center;
+}
+
+#section #left-header #nick-namep2 {
+    font-size: 4.2vw;
+}
+
+#section #left-header #pargarph-slogan {
+    font-size: 2vw;
+    line-height: 24px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+}
+
+#section #left-header #button-h {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 2.5vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#section #left-header #button-h:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Pjesa e sliderit */
+#slider {
+    position: relative;
+    margin-top: 100px;
+    top: 100px
+}
+
+#slider #div-sec {
+    margin: auto;
+    max-width: 450px;
+    font-family: sans-serif;
+}
+
+#slider #div-sec #header12 {
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+
+#slider #div-sec #paragraph-slider {
+    font-weight: lighter;
+    font-size: 2.5vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*Pjesa e sliderit */
+
+.slider {
+ /* Vendosni gjeresinë e sliderit sipas nevojës */
+    height: 300px; /* Vendosni lartësinë e sliderit sipas nevojës */
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    display: block;
+  }
+  
+  .slide {
+  /* Vendosni gjeresinë e slidereve sipas nevojës */
+    height: 100%; /* Vendosni lartësinë e slidereve sipas nevojës */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+
+  .g-slider {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+
+  .box {
+    background-color: rgba(255,228,225, 0.45);
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .box .header4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2.25vw;
+  }
+
+  .box .paragraf {
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    color: rgb(110, 108, 108);
+    line-height: 25px;
+    font-size: 2vw;
+  }
+
+
+  .slider2 {
+    display: none;
+  }
+
+
+
+
+
+/*Pjesa e obijeketeve */
+
+#obj {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#obj #div-obj {
+    margin: 100px auto 100px;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#obj #div-obj #header1211 {
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+#obj #div-obj #paragraph-slider1211 {
+    font-weight: lighter;
+    font-size: 2.5vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*pjesa e artikujve te obijekteve */
+
+#boxesi {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+#boxesi .boxi {
+    display: block;
+    height: auto;
+    box-shadow: 5px 3px 30px rgb(155, 152, 152);
+}
+
+
+#boxesi .boxi .img3 {
+    width: 100%;
+    height: 200px;
+}
+
+#boxesi .boxi .img3 .img31 {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+
+
+#boxesi .boxi .contents-b {
+    padding: 10px 20px;
+}
+
+#boxesi .boxi .contents-b .header411 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 2.2vw;
+}
+
+#boxesi .boxi .contents-b .paragraph441 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 118, 118);
+    user-select: none;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*sektori i studenteve ku shprehen */
+
+#students {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#students #div-obj {
+    margin: 200px auto 100px;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#students #div-obj #header1222 {
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+#students #div-obj #paragraph-slider1222 {
+    font-weight: lighter;
+    font-size: 2.5vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+
+#students #grid-column {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+#students #grid-column .box-n {
+    background-color: rgba(255,228,225, 0.45);
+}
+
+
+
+#students #grid-column .box-n  .lin-back {
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 5px;
+    line-height: 23px;
+    background-image: linear-gradient(to right, transparent 95%, rgba(26, 24, 24, 0.1));
+}
+
+
+
+.lin-1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.lin-2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+
+.boxnr1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.boxnr2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+#students #grid-column .box-n .rel-nameimg {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 0;
+}
+
+#students #grid-column .box-n .rel-nameimg .img-rel {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+#students #grid-column .box-n .rel-nameimg .p-students {
+    margin-top: 0;
+    margin-left: -35px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: rgb(102, 100, 100);
+}
+
+
+#students #grid-column .box-n .name-of-student {
+    text-align: center;
+    font-size: 2.2vw;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+/*Per staff */
+#staff {
+    height: 400px;
+    position: relative;
+    top: 100px;
+    margin-top: 200px;
+}
+
+#staff #box-staff {
+    height: 100%;
+    background-image: url(fotostaff.jpg);
+    background-position: 10% 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#staff #box-staff #header1-sch {
+    font-size: 3vw;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+
+#staff #box-staff #paragraph-1 {
+    font-size: 1.2vw;
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#staff #box-staff .b {
+    color: red;
+    font-weight: 900;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+#staff #box-staff #regist {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 1.3vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#staff #box-staff #regist:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+/*about us */
+#about1 {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+#about1 #about-us {
+    display: flex;
+    justify-content: center;
+}
+
+#about1 #about-us  #header-about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+
+#about1 #about1-us {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#about1 #about1-us {
+    font-size: 2vw;
+    font-weight: lighter;
+    color: rgb(102, 100, 100);
+    font-family: sans-serif;
+    line-height: 22px;
+}
+
+.b1 {
+    color: rgb(36, 36, 36);
+}
+
+
+/*
+.b-e {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1..07vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+*/
+
+
+#a11 {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1..07vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+#a11:hover {
+    background-color: rgb(255,69,0);
+    color: white;
+}
+
+
+
+
+/*pjesa e footer */
+
+#footer {
+    position: relative;
+    margin-top: 200px;
+    top: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+    }
+    
+    #footer #header51 {
+    font-size: 2.4vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+    }
+    
+    #footer #flex-f {
+    display: block;
+    text-align: center;
+    }
+    
+    #footer .cl2 {
+    margin-right: 0;
+    }
+    
+    #footer .cl {
+    margin-top: 5px;
+    font-family: sans-serif;
+    }
+    
+    #footer #flex-f .cl3 .div-s {
+    display: block;
+    }
+    
+    #footer .fl {
+    display: inline;
+    }
+    
+    #footer .header6 {
+    margin-top: 5px;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    
+    #footer .div2 {
+    margin-top: 15px;
+    }
+    
+    #footer .margin-f {
+    margin-left: 10px;
+    }
+
+
+
+/*pjesa e madhsise se faqes */
+
+.cols-1 {width: 8.33%;}
+.cols-2 {width: 16.66%;}
+.cols-3 {width: 25%;}
+.cols-4 {width: 33.33%;}
+.cols-5 {width: 41.66%;}
+.cols-6 {width: 50%;}
+.cols-7 {width: 58.33%;}
+.cols-8 {width: 66.66%;}
+.cols-9 {width: 75%;}
+.cols-10 {width: 83.33%;}
+.cols-11 {width: 91.66%;}
+.cols-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------*/
+
+/*pjesa per kompjutera desktopa te mdheje */
+@media only screen and (min-width: 992px) {
+  
+    body {
+        margin: 0;
+        padding: 0;
+    /*  background-color: red; */
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 80px;
+    }
+    
+    /*Pjesa e headerit */
+    header {
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 2vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 2.2vw;
+    }
+    
+    header #ul {
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 110px;
+        font-size: 1.7vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    header .overlay {
+        display: none;
+    }
+    
+    header #menu {
+        display: none;
+    }
+    
+    /*
+    .li1, .li2, .li3, .li4, .li5 {
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    
+    .li1:hover, .li2:hover, .li3:hover, .li4:hover, .li5:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    /*pjesa per a */
+    .a {
+        text-decoration: none;
+        color: rgb(60, 57, 57);
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    #active {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    header #ul::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+
+
+
+
+
+
+
+          /*pjesa e section*/
+#section {
+    height: 500px;
+    background-image: url(fotoshkolles.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 100% 100%;
+    position: relative;
+    top: 100px;
+}
+
+#section #left-header {
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(8, 8, 55), rgba(8, 8, 55, 0.74), rgba(8, 8, 55, 0.7),
+     rgba(8, 8, 55, 0.6));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+#section #left-header #breaking {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+
+#section #left-header #header1 {
+    font-size: 3.5vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    text-align: center;
+}
+
+#section #left-header #nick-namep2 {
+    font-size: 3.7vw;
+}
+
+#section #left-header #pargarph-slogan {
+    font-size: 1.6vw;
+    line-height: 24px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+}
+
+#section #left-header #button-h {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 1.8vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#section #left-header #button-h:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Pjesa e sliderit */
+#slider {
+    position: relative;
+    margin-top: 100px;
+    top: 100px
+}
+
+#slider #div-sec {
+    margin: auto;
+    max-width: 450px;
+    font-family: sans-serif;
+}
+
+#slider #div-sec #header12 {
+    font-size: 2.8vw;
+    font-weight: bolder;
+}
+
+
+#slider #div-sec #paragraph-slider {
+    font-weight: lighter;
+    font-size: 1.8vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*Pjesa e sliderit */
+
+.slider {
+ /* Vendosni gjeresinë e sliderit sipas nevojës */
+    height: 300px; /* Vendosni lartësinë e sliderit sipas nevojës */
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    display: block;
+  }
+  
+  .slide {
+  /* Vendosni gjeresinë e slidereve sipas nevojës */
+    height: 100%; /* Vendosni lartësinë e slidereve sipas nevojës */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+
+  .g-slider {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+
+  .box {
+    background-color: rgba(255,228,225, 0.45);
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .box .header4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.8vw;
+  }
+
+  .box .paragraf {
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    color: rgb(110, 108, 108);
+    line-height: 25px;
+    font-size: 1.5vw;
+  }
+
+
+  .slider2 {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+  /*Pjesa e obijeketeve */
+
+#obj {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#obj #div-obj {
+    margin: 200px auto 100px;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#obj #div-obj #header1211 {
+    font-size: 2.8vw;
+    font-weight: bolder;
+}
+
+#obj #div-obj #paragraph-slider1211 {
+    font-weight: lighter;
+    font-size: 1.8vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*pjesa e artikujve te obijekteve */
+
+#boxesi {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+#boxesi .boxi {
+    display: block;
+    height: auto;
+    box-shadow: 5px 3px 30px rgb(155, 152, 152);
+}
+
+
+#boxesi .boxi .img3 {
+    width: 100%;
+    height: 250px;
+}
+
+#boxesi .boxi .img3 .img31 {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+
+
+#boxesi .boxi .contents-b {
+    padding: 10px 20px;
+}
+
+#boxesi .boxi .contents-b .header411 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+#boxesi .boxi .contents-b .paragraph441 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 118, 118);
+    user-select: none;
+    font-size: 1.7vw;
+}
+
+
+
+
+
+
+/*sektori i studenteve ku shprehen */
+
+#students {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#students #div-obj {
+    margin: 200px auto 100px;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#students #div-obj #header1222 {
+    font-size: 2.8vw;
+    font-weight: bolder;
+}
+
+#students #div-obj #paragraph-slider1222 {
+    font-weight: lighter;
+    font-size: 1.8vw;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+
+#students #grid-column {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+#students #grid-column .box-n {
+    background-color: rgba(255,228,225, 0.45);
+}
+
+
+
+#students #grid-column .box-n  .lin-back {
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 5px;
+    line-height: 23px;
+    background-image: linear-gradient(to right, transparent 95%, rgba(26, 24, 24, 0.1));
+}
+
+
+
+.lin-1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.lin-2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+
+.boxnr1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.boxnr2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+#students #grid-column .box-n .rel-nameimg {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 0;
+}
+
+#students #grid-column .box-n .rel-nameimg .img-rel {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+#students #grid-column .box-n .rel-nameimg .p-students {
+    margin-top: 0;
+    margin-left: -35px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6vw;
+    color: rgb(102, 100, 100);
+}
+
+
+#students #grid-column .box-n .name-of-student {
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/*Per staff */
+#staff {
+    height: 400px;
+    position: relative;
+    top: 100px;
+    margin-top: 200px;
+}
+
+#staff #box-staff {
+    height: 100%;
+    background-image: url(fotostaff.jpg);
+    background-position: 10% 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#staff #box-staff #header1-sch {
+    font-size: 2.5vw;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+
+#staff #box-staff #paragraph-1 {
+    font-size: 1.5vw;
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#staff #box-staff .b {
+    color: red;
+    font-weight: 900;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+#staff #box-staff #regist {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 1.8vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#staff #box-staff #regist:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+/*about us */
+#about1 {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+#about1 #about-us {
+    display: flex;
+    justify-content: center;
+}
+
+#about1 #about-us  #header-about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.8vw;
+    font-weight: bolder;
+}
+
+
+#about1 #about1-us {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#about1 #about1-us {
+    font-size: 1.7vw;
+    font-weight: lighter;
+    color: rgb(102, 100, 100);
+    font-family: sans-serif;
+    line-height: 22px;
+}
+
+.b1 {
+    color: rgb(36, 36, 36);
+}
+
+
+/*
+.b-e {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1..07vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+*/
+
+
+#a11 {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1.7vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+#a11:hover {
+    background-color: rgb(255,69,0);
+    color: white;
+}
+
+
+
+
+
+
+ 
+
+  /*pjesa e footer */
+    
+  #footer {
+    position: relative;
+    margin-top: 100px;
+    top: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+}
+
+#footer #header51 {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer #flex-f {
+    margin-right: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#footer .cl {
+    font-family: sans-serif;
+}
+
+.inl-div {
+    display: inline-block;
+}
+
+#footer #flex-f .cl3 .div-s {
+    display: block;
+}
+
+#footer .fl {
+    font-size: 2vw;
+}
+
+#footer .header6 {
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#footer .div2 {
+    margin-top: 10px;
+}
+
+#footer .margin-f {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+
+
+
+    /*pjesa e gjersise se elementeve */
+.cols-1 {width: 8.33%;}
+.cols-2 {width: 16.66%;}
+.cols-3 {width: 25%;}
+.cols-4 {width: 33.33%;}
+.cols-5 {width: 41.66%;}
+.cols-6 {width: 50%;}
+.cols-7 {width: 58.33%;}
+.cols-8 {width: 66.66%;}
+.cols-9 {width: 75%;}
+.cols-10 {width: 83.33%;}
+.cols-11 {width: 91.66%;}
+.cols-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*/
+
+/*pjesa per desktop te kompjuterit per paisje te medha */
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+     /*  background-color: rgba(212, 212, 56, 0.3);*/
+    }
+
+
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 100px;
+    }
+    
+    /*Pjesa e headerit */
+    header {
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 1.6vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 1.75vw;
+    }
+    
+    header #ul {
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.38vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    header .overlay {
+        display: none;
+    }
+    
+    header #menu {
+        display: none;
+    }
+    
+    /*
+    .li1, .li2, .li3, .li4, .li5 {
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    
+    .li1:hover, .li2:hover, .li3:hover, .li4:hover, .li5:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    /*pjesa per a */
+    .a {
+        text-decoration: none;
+        color: rgb(60, 57, 57);
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    #active {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    header #ul::after {
+        content: '';
+        display: table;
+        clear: both;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+                /*pjesa e section*/
+#section {
+    height: 500px;
+    background-image: url(fotoshkolles.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 100% 100%;
+    position: relative;
+    top: 100px;
+}
+
+#section #left-header {
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(8, 8, 55), rgba(8, 8, 55, 0.74), rgba(8, 8, 55, 0.7),
+     rgba(8, 8, 55, 0.6));
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+#section #left-header #breaking {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+
+#section #left-header #header1 {
+    font-size: 2.8vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    text-align: center;
+}
+
+#section #left-header #nick-namep2 {
+    font-size: 3vw;
+}
+
+#section #left-header #pargarph-slogan {
+    font-size: 1.5vw;
+    line-height: 24px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+}
+
+#section #left-header #button-h {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 1.4vw;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#section #left-header #button-h:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Pjesa e sliderit */
+#slider {
+    position: relative;
+    margin-top: 100px;
+    top: 100px
+}
+
+#slider #div-sec {
+    margin: auto;
+    max-width: 450px;
+    font-family: sans-serif;
+}
+
+#slider #div-sec #header12 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+
+#slider #div-sec #paragraph-slider {
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*Pjesa e sliderit */
+
+.slider {
+ /* Vendosni gjeresinë e sliderit sipas nevojës */
+    height: 300px; /* Vendosni lartësinë e sliderit sipas nevojës */
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    display: block;
+  }
+  
+  .slide {
+  /* Vendosni gjeresinë e slidereve sipas nevojës */
+    height: 100%; /* Vendosni lartësinë e slidereve sipas nevojës */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+
+  .g-slider {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+
+  .box {
+    background-color: rgba(255,228,225, 0.45);
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .box .header4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .box .paragraf {
+    font-family: sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    color: rgb(110, 108, 108);
+    line-height: 25px;
+    font-size: 20px;
+  }
+
+
+  .slider2 {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+  /*Pjesa e obijeketeve */
+
+#obj {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#obj #div-obj {
+    margin: 100px auto 100px;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#obj #div-obj #header1211 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#obj #div-obj #paragraph-slider1211 {
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+/*pjesa e artikujve te obijekteve */
+
+#boxesi {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+
+#boxesi .boxi {
+    display: block;
+    height: auto;
+    box-shadow: 5px 3px 30px rgb(155, 152, 152);
+}
+
+
+#boxesi .boxi .img3 {
+    width: 100%;
+    height: 300px;
+}
+
+#boxesi .boxi .img3 .img31 {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+
+
+#boxesi .boxi .contents-b {
+    padding: 5px 20px;
+}
+
+#boxesi .boxi .contents-b .header411 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#boxesi .boxi .contents-b .paragraph441 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(120, 118, 118);
+    user-select: none;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/*sektori i studenteve ku shprehen */
+
+#students {
+    position: relative;
+    top: 100px;
+    display: block;
+}
+
+#students #div-obj {
+    margin: 200px auto 100px;
+    max-width: 450px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#students #div-obj #header1222 {
+    font-size:  36px;
+    font-weight: bolder;
+}
+
+#students #div-obj #paragraph-slider1222 {
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgb(156, 152, 152);
+    position: relative;
+    top: -5px;
+}
+
+
+
+#students #grid-column {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+#students #grid-column .box-n {
+    background-color: rgba(255,228,225, 0.45);
+}
+
+
+
+#students #grid-column .box-n  .lin-back {
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 5px;
+    line-height: 25px;
+    background-image: linear-gradient(to right, transparent 95%, rgba(26, 24, 24, 0.1));
+}
+
+
+
+.lin-1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.lin-2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+
+.boxnr1 {
+    border-radius: 25px 15px 15px 25px;
+}
+
+
+.boxnr2 {
+    border-radius: 15px 25px 25px 15px;
+}
+
+
+#students #grid-column .box-n .rel-nameimg {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 0;
+}
+
+#students #grid-column .box-n .rel-nameimg .img-rel {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+}
+
+#students #grid-column .box-n .rel-nameimg .p-students {
+    margin-top: 0;
+    margin-left: -15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(102, 100, 100);
+}
+
+
+#students #grid-column .box-n .name-of-student {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/*Per staff */
+#staff {
+    height: 400px;
+    position: relative;
+    top: 100px;
+    margin-top: 200px;
+}
+
+#staff #box-staff {
+    height: 100%;
+    background-image: url(fotostaff.jpg);
+    background-position: 10% 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#staff #box-staff #header1-sch {
+    font-size: 37px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+
+#staff #box-staff #paragraph-1 {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#staff #box-staff .b {
+    color: red;
+    font-weight: 900;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+#staff #box-staff #regist {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    color: white;
+    padding: 5px 30px;
+    margin: 50px auto;
+    font-size: 22px;
+    transition: background-color .6s ease-out;
+    cursor:grab;
+    user-select: none;
+}
+
+#staff #box-staff #regist:hover {
+    background-color: rgb(255,69,0);
+}
+
+
+
+
+
+
+/*about us */
+#about1 {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+    display: block;
+}
+
+#about1 #about-us {
+    display: flex;
+    justify-content: center;
+}
+
+#about1 #about-us  #header-about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+
+#about1 #about1-us {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#about1 #about1-us {
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(102, 100, 100);
+    font-family: sans-serif;
+    line-height: 22px;
+}
+
+.b1 {
+    color: rgb(36, 36, 36);
+}
+
+
+/*
+.b-e {
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 1..07vw;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+*/
+
+
+#a11 {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    border: 1px solid rgb(255,69,0);
+    background-color: transparent;
+    padding: 3px 15px;
+    font-size: 18px;
+    transition: background-color .8s ease-out, color .6s ease-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-left: 5px;
+    user-select: none;
+}
+
+#a11:hover {
+    background-color: rgb(255,69,0);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*pjesa e footer */
+    
+    #footer {
+        position: relative;
+        margin-top: 100px;
+        top: 100px;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+    }
+    
+    #footer #header51 {
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: 900;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    #footer #flex-f {
+        margin-right: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    #footer .cl {
+        font-family: sans-serif;
+    }
+
+    .inl-div {
+        display: inline-block;
+    }
+    
+    #footer #flex-f .cl3 .div-s {
+        display: block;
+    }
+    
+    #footer .fl {
+        font-size: 1.4vw;
+    }
+    
+    #footer .header6 {
+        font-size: 1.18vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    
+    #footer .div2 {
+        margin-top: 10px;
+    }
+    
+    #footer .margin-f {
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+
+
+    
+    
+    
+    
+    
+    /*pjesa e madhsise se faqes */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+}

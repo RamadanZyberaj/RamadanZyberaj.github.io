@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logoshkolla.jpg">
+    <link rel="stylesheet" href="styleRrethNesh.css">
+    <title>Rreth nesh</title>
+    <script src="https://kit.fontawesome.com/b71442b7a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--Pjesa e head-erit-->
+    <header class="content col-12 cols-12">
+
+        <!--pjesa e header-it-->
+        <div id="logo-name" class="col-5">
+            <div id="logo">
+                <img src="logoshkolla.jpg" alt="logo" max-width="100px" height="50px" id="img1">
+            </div>
+            <div id="name-sch">
+                Selajdin Mulla Abazi - <span id="nick-name">mici</span>
+            </div>   
+        </div>
+
+
+
+        <!--pjesa e listave-->
+        <ul id="ul">
+            <li class="li li1"><a href="faqja.html" class="a" data-target="contact">Ballina</a></li>
+            <li class="li li2"><a href="#" class="a" id="active"  data-target="contact">Rreth Nesh</a></li>
+            <li class="li li3"><a href="lendet.html" class="a" data-target="contact">Lendet</a></li>
+            <li class="li li5"><a href="contact.html" class="a" data-target="contact">Kontakti</a></li>
+        </ul>
+
+
+        
+        <!--pjesa e hamburger menus-->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;</span>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="faqja.html">Ballina</a>
+              <a href="rrethnesh.html" id="active-li">Rreth Nesh</a>
+              <a href="lendet.html">Lendet</a>
+              <a href="contact.html">Kontakti</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!--pjesa e section-listes about us-->
+    <section id="header-section" class="col-12 cols-12">
+
+        <div id="opacity" class="col-12">
+            <h1 id="about-us">Rreth Nesh</h1>
+        </div>
+
+    </section>
+
+
+
+
+    <!--pjesa e prezantimit ne nje div grid me 2 artikuj-->
+    <section id="presention" class="col-12 content">
+
+        <div id="grid-iteam" class="col-12 cols-12">
+
+            <div id="iteam-1" class="col-5 cols-12">
+                <h2 id="header21">Ne jemi shkolla e vetme profesionale ne komunen e Rahovecit</h2>
+                <p class="text">Ne kemi profesore qe do te i'u aftesojne per te ardhmen tuaj, do te i'u ndihmojne ti realizoni endrrat tuaja!
+                    jane shume komunikues me ju dhe kane deshire qe te i'u bejne te afte ne realizim e projekteve, gjithashtu si detyre e tyre
+                    eshte te ju paraqesin projekte te cilat ju duhet ti realizoni. Kjo do te jete ne dobi te juaj pershkak se do te ju bejne 
+                    te gatshem per tregun e punes, cdo gje qe do te duket komplekse per ju studentet do te jeni te udhezuar nga profesoret tuaj
+                    se si ta bene ekzukutim e dytyrave duke i shmangur problemet qe do te paraqiten gjate rrugetimit per ju studentet.
+                </p>
+                <br>
+                <p class="text">Nese deshironi te njoftoheni me shume rreth asaj se cfare ndodhe ne prcesin e punes na vizitoni ne obijektin shkollore.
+                    ju faliminderit!
+                </p>
+            </div>
+
+            <div id="iteam-2" class="col-6">
+                <img src="foto2staff.jpg" alt="foto" id="img-staff" width="100%">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!--Pjesa e fundit e footer-->
+
+    <footer id="footer" class="col-12 content">
+        <h5 id="header51">Created by:</h5>
+
+        <div id="flex-f">
+
+            <div class="cl cl1">
+                <h6 class="header6">ramadanzyberaj9@gmail.com</h6>
+            </div>
+
+
+            <div class="cl cl2">
+                <h6 class="header6">Ramadan Zyberaj</h6>
+            </div>
+
+
+            <div class="cl cl3">
+                
+                <!--Ky divi lart duhet qendroje display block per dy divat e ardhshem per facebook dhe instagram
+                lete fiilojme me divin  e pare-->
+
+
+                <!--Divi i pare  i cili do te  jete flex ne menyre-->
+                <div class="div-s div1">
+                    <i class="fa-brands fa-facebook fa-fade fl" style="color: #206ef3;;"></i>
+                    <h6 class="header6 fl margin-f">ramadan zyberaj</h6>
+                </div>
+
+                <!--Divi i dyte i cili do te jete flex ne menyre-->
+                <div class="div-s div2">
+                    <i class="fa-brands fa-instagram fa-fade fl" style="color: #f00f92;"></i>
+                    <h6 class="header6 fl margin-f">ramadan__zyberaj_</h6>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="type.js"></script>
+</body>
+</html>

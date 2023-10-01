@@ -1,0 +1,1558 @@
+/*Pjesa per telefona paisje per desktopa te vegjel*/
+
+@media only screen and (max-width: 600px) { 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 25px;
+    }
+    
+    
+    /*pjesa e headr-it*/
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 3vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 3.2vw;
+    }
+    
+    header #ul {
+        display: none;
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.25vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    /*pjesa hamburger - menu */
+    
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus, #active-li {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+
+
+
+
+
+
+/*pjesa e section te about us */
+
+#header-section {
+    position: relative;
+    top: 100px;
+    height: 300px;
+    background-image: url(foto2studenteve.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    background-size: cover;
+}
+
+
+#header-section #opacity {
+    height: 100%;
+    background-color: rgba(84, 79, 78, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+#header-section #opacity #about-us {
+    font-size: 6vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    animation: anime 2s linear  infinite;
+}
+
+@keyframes anime {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: rgb(204, 197, 197);
+    }
+
+    100% {
+        color: rgb(248, 248, 248);
+    }
+}
+
+
+
+
+
+/*pjesa e presentation */
+#presention {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+}
+
+
+#presention #grid-iteam {
+    height: 500px;
+    display: block;
+}
+
+ #header21 {
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 4.8vw;
+    line-height: 30.5px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+#presention .text {
+    font-size: 3.35vw;
+    line-height: 25px;
+    font-family: sans-serif;
+    word-spacing: 1px;
+}
+
+#presention #grid-iteam #img-staff {
+    height: 300px;
+    max-width: 100%;
+    outline-offset: 0;
+    outline: 2px solid rgb(194, 193, 193);
+    border: 20px  solid rgba(82, 80, 80, 0.1);
+    margin-top: 50px;
+}
+
+
+
+
+
+/*pjesa e footer */
+
+#footer {
+    position: relative;
+    margin-top: 500px;
+    top: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+}
+
+#footer #header51 {
+    font-size: 3.15vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+}
+
+#footer #flex-f {
+    display: block;
+    text-align: center;
+}
+
+#footer .cl2 {
+    margin-right: 0;
+}
+
+#footer .cl {
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+#footer #flex-f .cl3 .div-s {
+    display: block;
+}
+
+#footer .fl {
+    display: inline;
+}
+
+#footer .header6 {
+    margin-top: 10px;
+    font-size: 2.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#footer .div2 {
+    margin-top: 15px;
+}
+
+#footer .margin-f {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/*pjesa e madhsise se faqes */
+.cols-1 {width: 8.33%;}
+.cols-2 {width: 16.66%;}
+.cols-3 {width: 25%;}
+.cols-4 {width: 33.33%;}
+.cols-5 {width: 41.66%;}
+.cols-6 {width: 50%;}
+.cols-7 {width: 58.33%;}
+.cols-8 {width: 66.66%;}
+.cols-9 {width: 75%;}
+.cols-10 {width: 83.33%;}
+.cols-11 {width: 91.66%;}
+.cols-12 {width: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+
+/*pjesa per telefon min-width (min-width: 600px)*/
+
+@media only screen and (min-width: 600px) {
+    /*pjesa per telefon ner 600px */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+     /* background-color: green; */
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 50px;
+    }
+    
+    
+    /*pjesa e headr-it*/
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 3vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 3.2vw;
+    }
+    
+    header #ul {
+        display: none;
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.25vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    /*pjesa hamburger - menu */
+    
+    header .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgb(0,0,0);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      header   .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      header .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      header .overlay a:hover, .overlay a:focus, #active-li {
+        color: #f1f1f1;
+      }
+      
+      header .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+
+
+
+
+
+
+
+      /*pjesa e section te about us */
+
+#header-section {
+    position: relative;
+    top: 100px;
+    height: 300px;
+    background-image: url(foto2studenteve.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    background-size: cover;
+}
+
+
+#header-section #opacity {
+    height: 100%;
+    background-color: rgba(84, 79, 78, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+#header-section #opacity #about-us {
+    font-size: 6vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    animation: anime 2s linear  infinite;
+}
+
+@keyframes anime {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: rgb(204, 197, 197);
+    }
+
+    100% {
+        color: rgb(248, 248, 248);
+    }
+}
+
+
+
+
+
+/*pjesa e presentation */
+#presention {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+}
+
+
+#presention #grid-iteam {
+    height: 500px;
+    display: block;
+}
+
+ #header21 {
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 4vw;
+    line-height: 32px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+#presention .text {
+    font-size: 2.8vw;
+    line-height: 25px;
+    font-family: sans-serif;
+    word-spacing: 1px;
+}
+
+#presention #grid-iteam #img-staff {
+    height: 400px;
+    max-width: 100%;
+    outline-offset: 0;
+    outline: 2px solid rgb(194, 193, 193);
+    border: 20px  solid rgba(82, 80, 80, 0.1);
+    margin: 100px 0;
+}
+
+
+
+
+
+
+
+
+/*pjesa e footer */
+
+#footer {
+    position: relative;
+    margin-top: 500px;
+    top: 200px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+    }
+    
+    #footer #header51 {
+    font-size: 2.4vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+    }
+    
+    #footer #flex-f {
+    display: block;
+    text-align: center;
+    }
+    
+    #footer .cl2 {
+    margin-right: 0;
+    }
+    
+    #footer .cl {
+    margin-top: 5px;
+    font-family: sans-serif;
+    }
+    
+    #footer #flex-f .cl3 .div-s {
+    display: block;
+    }
+    
+    #footer .fl {
+    display: inline;
+    }
+    
+    #footer .header6 {
+    margin-top: 5px;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    
+    #footer .div2 {
+    margin-top: 15px;
+    }
+    
+    #footer .margin-f {
+    margin-left: 10px;
+    }
+    
+
+
+
+
+
+
+       /*pjesa e madhsise se faqes */
+    .cols-1 {width: 8.33%;}
+    .cols-2 {width: 16.66%;}
+    .cols-3 {width: 25%;}
+    .cols-4 {width: 33.33%;}
+    .cols-5 {width: 41.66%;}
+    .cols-6 {width: 50%;}
+    .cols-7 {width: 58.33%;}
+    .cols-8 {width: 66.66%;}
+    .cols-9 {width: 75%;}
+    .cols-10 {width: 83.33%;}
+    .cols-11 {width: 91.66%;}
+    .cols-12 {width: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+
+/*pjesa per telefon min-width (min-width)*/
+
+@media only screen and (min-width: 768px) {
+    /*pjesa per telefon ner 600px */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      /* background-color: pink;*/
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 50px;
+    }
+    
+    
+    /*pjesa e headr-it*/
+    header {
+        max-width: 100%;
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 3vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 3.2vw;
+    }
+    
+    header #ul {
+        display: none;
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.25vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    /*pjesa hamburger - menu */
+    
+    header .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgb(0,0,0);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      header   .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      header .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      header .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      header .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+
+
+
+
+
+
+
+     /*pjesa e section te about us */
+
+#header-section {
+    position: relative;
+    top: 100px;
+    height: 300px;
+    background-image: url(foto2studenteve.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    background-size: cover;
+}
+
+
+#header-section #opacity {
+    height: 100%;
+    background-color: rgba(84, 79, 78, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+#header-section #opacity #about-us {
+    font-size: 4vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    animation: anime 2s linear  infinite;
+}
+
+@keyframes anime {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: rgb(204, 197, 197);
+    }
+
+    100% {
+        color: rgb(248, 248, 248);
+    }
+}
+
+
+
+
+
+/*pjesa e presentation */
+#presention {
+    position: relative;
+    top: 100px;
+    margin-top: 100px;
+}
+
+
+#presention #grid-iteam {
+    height: 500px;
+    display: block;
+}
+
+ #header21 {
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 3.5vw;
+    line-height: 37px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+#presention .text {
+    font-size: 2.2vw;
+    line-height: 27px;
+    font-family: sans-serif;
+    word-spacing: 1px;
+}
+
+#presention #grid-iteam #img-staff {
+    height: 450px;
+    max-width: 100%;
+    outline-offset: 0;
+    outline: 2px solid rgb(194, 193, 193);
+    border: 20px  solid rgba(82, 80, 80, 0.1);
+    margin: 100px 0;
+}
+
+
+
+
+
+
+
+
+/*pjesa e footer */
+
+#footer {
+    position: relative;
+    margin-top: 500px;
+    top: 200px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+    }
+    
+    #footer #header51 {
+    font-size: 2.4vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+    }
+    
+    #footer #flex-f {
+    display: block;
+    text-align: center;
+    }
+    
+    #footer .cl2 {
+    margin-right: 0;
+    }
+    
+    #footer .cl {
+    margin-top: 5px;
+    font-family: sans-serif;
+    }
+    
+    #footer #flex-f .cl3 .div-s {
+    display: block;
+    }
+    
+    #footer .fl {
+    display: inline;
+    }
+    
+    #footer .header6 {
+    margin-top: 5px;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    
+    #footer .div2 {
+    margin-top: 15px;
+    }
+    
+    #footer .margin-f {
+    margin-left: 10px;
+    }
+
+
+
+
+
+
+
+       /*pjesa e madhsise se faqes */
+    .cols-1 {width: 8.33%;}
+    .cols-2 {width: 16.66%;}
+    .cols-3 {width: 25%;}
+    .cols-4 {width: 33.33%;}
+    .cols-5 {width: 41.66%;}
+    .cols-6 {width: 50%;}
+    .cols-7 {width: 58.33%;}
+    .cols-8 {width: 66.66%;}
+    .cols-9 {width: 75%;}
+    .cols-10 {width: 83.33%;}
+    .cols-11 {width: 91.66%;}
+    .cols-12 {width: 100%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------*/
+
+
+/*pjesa per megjersi me te mdhaja per desktopa me te mdhenje */
+
+@media only screen and (min-width: 992px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 80px;
+    }
+    
+    /*Pjesa e headerit */
+    header {
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 2vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 2.2vw;
+    }
+    
+    header #ul {
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 110px;
+        font-size: 1.7vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    header .overlay {
+        display: none;
+    }
+    
+    header #menu {
+        display: none;
+    }
+    
+    /*
+    .li1, .li2, .li3, .li4, .li5 {
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    
+    .li1:hover, .li2:hover, .li3:hover, .li4:hover, .li5:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    /*pjesa per a */
+    .a {
+        text-decoration: none;
+        color: rgb(60, 57, 57);
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    #active {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    header #ul::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*pjesa e section te about us */
+
+#header-section {
+    position: relative;
+    top: 100px;
+    height: 400px;
+    background-image: url(foto2studenteve.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+    background-size: cover;
+}
+
+
+#header-section #opacity {
+    height: 100%;
+    background-color: rgba(84, 79, 78, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+#header-section #opacity #about-us {
+    font-size: 3vw;
+    color: white;
+    font-family:sans-serif;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform:capitalize;
+    animation: anime 2s linear  infinite;
+}
+
+@keyframes anime {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: rgb(204, 197, 197);
+    }
+
+    100% {
+        color: rgb(248, 248, 248);
+    }
+}
+
+
+
+
+/*pjesa e presentation */
+#presention {
+    position: relative;
+    top: 100px;
+    margin-top: 150px;
+}
+
+
+#presention #grid-iteam {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+ #header21 {
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 2.5vw;
+    line-height: 30px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+#presention .text {
+    font-size: 1.7vw;
+    line-height: 25px;
+    font-family: sans-serif;
+    word-spacing: 1px;
+}
+
+#presention #grid-iteam #img-staff {
+    height: 400px;
+    width: 100%;
+    outline-offset: 0;
+    outline: 2px solid rgb(194, 193, 193);
+    border: 20px  solid rgba(82, 80, 80, 0.1);
+    display: none;
+}
+
+
+
+
+
+  /*pjesa e footer */
+    
+  #footer {
+    position: relative;
+    margin-top: 100px;
+    top: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+}
+
+#footer #header51 {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer #flex-f {
+    margin-right: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#footer .cl {
+    font-family: sans-serif;
+}
+
+.inl-div {
+    display: inline-block;
+}
+
+#footer #flex-f .cl3 .div-s {
+    display: block;
+}
+
+#footer .fl {
+    font-size: 2vw;
+}
+
+#footer .header6 {
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#footer .div2 {
+    margin-top: 10px;
+}
+
+#footer .margin-f {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+    /*pjesa e madhsise se faqes */
+    .cols-1 {width: 8.33%;}
+    .cols-2 {width: 16.66%;}
+    .cols-3 {width: 25%;}
+    .cols-4 {width: 33.33%;}
+    .cols-5 {width: 41.66%;}
+    .cols-6 {width: 50%;}
+    .cols-7 {width: 58.33%;}
+    .cols-8 {width: 66.66%;}
+    .cols-9 {width: 75%;}
+    .cols-10 {width: 83.33%;}
+    .cols-11 {width: 91.66%;}
+    .cols-12 {width: 100%;}
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*/
+
+/*pjesa per desktop te kompjuterit per paisje te medha */
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+      /*  background-color: yellow; */
+    }
+
+
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    .a {
+        text-decoration: none;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+    }
+    
+    .content {
+        padding: 0 100px;
+    }
+    
+    /*Pjesa e headerit */
+    header {
+        height: 100px;
+        background-color: rgb(245,245,245);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position:fixed;
+        z-index: 2;
+        user-select: none;
+    }
+    
+    header #logo-name {
+        display: flex;
+        align-items: center;
+    }
+    
+    header #logo-name #logo {
+        margin-right: 10px;
+    }
+    
+    header #logo-name #logo #img1 {
+        max-width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    
+    
+    
+    header #logo-name #name-sch {
+        font-size: 1.6vw;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 75, 75);
+        letter-spacing: 0.5px;
+    }
+    
+    header #logo-name #name-sch #nick-name {
+        text-transform: uppercase;
+        font-size: 1.75vw;
+    }
+    
+    header #ul {
+        list-style-type: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+    }
+    
+    header #ul .li {
+        float: left;
+        max-width: 120px;
+        font-size: 1.38vw;
+        margin-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    header .overlay {
+        display: none;
+    }
+    
+    header #menu {
+        display: none;
+    }
+    
+    /*
+    .li1, .li2, .li3, .li4, .li5 {
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    
+    .li1:hover, .li2:hover, .li3:hover, .li4:hover, .li5:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    /*pjesa per a */
+    .a {
+        text-decoration: none;
+        color: rgb(60, 57, 57);
+        transition: color .3s ease, border .3s ease-out;
+        padding-bottom: 2px;
+    }
+    
+    .a:hover {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    #active {
+        color: rgb(131,137,150);
+        border-bottom: 1px solid rgb(131,137,150);
+    }
+    
+    
+    header #ul::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*pjesa e presentation */
+#presention {
+    position: relative;
+    top: 100px;
+    margin-top: 150px;
+}
+
+
+#presention #grid-iteam {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+ #header21 {
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+#presention .text {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: sans-serif;
+    word-spacing: 1px;
+}
+
+#presention #grid-iteam #img-staff {
+    height: 400px;
+    width: 100%;
+    outline-offset: 0;
+    outline: 2px solid rgb(194, 193, 193);
+    border: 20px  solid rgba(82, 80, 80, 0.1);
+    display: grid;
+    margin-left: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*pjesa e footer */
+    
+#footer {
+    position: relative;
+    margin-top: 100px;
+    top: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.95), rgba(0,0,0, 0.93), rgba(8, 8, 13, 0.9));
+}
+
+#footer #header51 {
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#footer #flex-f {
+    margin-right: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#footer .cl {
+    font-family: sans-serif;
+}
+
+.inl-div {
+    display: inline-block;
+}
+
+#footer #flex-f .cl3 .div-s {
+    display: block;
+}
+
+#footer .fl {
+    font-size: 1.4vw;
+}
+
+#footer .header6 {
+    font-size: 1.18vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#footer .div2 {
+    margin-top: 10px;
+}
+
+#footer .margin-f {
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+    /*pjesa e madhsise se faqes */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+
+}
